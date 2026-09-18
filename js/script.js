@@ -19,13 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const pupilRight = document.getElementById('heroPupilRight');
   const characterWrapper = document.getElementById('heroCharacterWrapper');
   const heroVideo = document.getElementById('heroCharacterImg');
-  const heroNameVideo = document.getElementById('heroNameVideo');
 
-  [heroVideo, heroNameVideo].forEach(vid => {
-    if (vid && vid.tagName === 'VIDEO') {
-      vid.play().catch(() => {});
-    }
-  });
+  if (heroVideo && heroVideo.tagName === 'VIDEO') {
+    heroVideo.play().catch(() => {});
+  }
 
   if (heroCharacter && characterWrapper) {
     let mouseX = window.innerWidth / 2;
@@ -100,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (copyEmailBtn && copyTooltip) {
     copyEmailBtn.addEventListener('click', (e) => {
-      const email = 'mtaqi5771@gmail.com';
+      const email = 'Syed.m.waqas02@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
         const originalText = copyTooltip.textContent;
         copyTooltip.textContent = 'COPIED!';
