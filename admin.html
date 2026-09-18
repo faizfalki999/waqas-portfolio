@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#060305">
-  <title>Admin Authentication | Syed Waqas</title>
+  <title>Admin Authentication | Taqi Haider</title>
   <meta name="description"
-    content="Restricted administrative portal for Syed Waqas's creative portfolio and digital archives.">
+    content="Restricted administrative portal for Taqi Haider's creative portfolio and digital archives.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,12 +69,12 @@
 
   <!-- Main Login Section -->
   <main class="admin-main-wrap">
-    
+
     <!-- Ambient Maroon / Crimson Glow Backdrop Effect -->
     <div class="admin-ambient-glow" aria-hidden="true"></div>
 
     <div class="admin-card-container">
-      
+
       <div class="admin-card">
         <!-- Streetwear Corner Brackets -->
         <span class="admin-corner-bracket admin-corner-tl" aria-hidden="true"></span>
@@ -96,7 +96,8 @@
 
         <!-- Alert Notification (Dynamic error or success feedback) -->
         <div class="admin-alert-banner" id="adminAlert" role="alert" aria-live="polite">
-          <svg class="admin-alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="admin-alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="12" y1="8" x2="12" y2="12"></line>
             <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -104,12 +105,13 @@
           <div class="admin-alert-content" id="adminAlertText">
             Invalid credentials. Please verify your email and password.
           </div>
-          <button type="button" class="admin-alert-dismiss" id="adminAlertDismiss" aria-label="Dismiss alert">&times;</button>
+          <button type="button" class="admin-alert-dismiss" id="adminAlertDismiss"
+            aria-label="Dismiss alert">&times;</button>
         </div>
 
         <!-- Login Form -->
         <form class="admin-form" id="adminLoginForm" novalidate>
-          
+
           <!-- Email Field -->
           <div class="admin-form-group">
             <div class="admin-label-row">
@@ -117,20 +119,14 @@
             </div>
             <div class="admin-input-wrapper">
               <span class="admin-field-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </span>
-              <input
-                type="email"
-                id="adminEmail"
-                name="email"
-                class="admin-input"
-                placeholder="taqi@ikiakistudios.com"
-                autocomplete="email"
-                required
-              >
+              <input type="email" id="adminEmail" name="email" class="admin-input" placeholder="taqi@ikiakistudios.com"
+                autocomplete="email" required>
             </div>
           </div>
 
@@ -142,35 +138,28 @@
             </div>
             <div class="admin-input-wrapper">
               <span class="admin-field-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
                   <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                   <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                 </svg>
               </span>
-              <input
-                type="password"
-                id="adminPassword"
-                name="password"
-                class="admin-input"
-                placeholder="••••••••••••"
-                autocomplete="current-password"
-                required
-              >
-              <button
-                type="button"
-                class="admin-password-toggle"
-                id="passwordToggleBtn"
-                aria-label="Toggle password visibility"
-                title="Toggle password visibility"
-              >
+              <input type="password" id="adminPassword" name="password" class="admin-input" placeholder="••••••••••••"
+                autocomplete="current-password" required>
+              <button type="button" class="admin-password-toggle" id="passwordToggleBtn"
+                aria-label="Toggle password visibility" title="Toggle password visibility">
                 <!-- Eye Open Icon -->
-                <svg id="eyeIconShow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg id="eyeIconShow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                   <circle cx="12" cy="12" r="3"></circle>
                 </svg>
                 <!-- Eye Crossed Icon (Hidden by default) -->
-                <svg id="eyeIconHide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                  <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                <svg id="eyeIconHide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                  <path
+                    d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                  </path>
                   <line x1="1" y1="1" x2="23" y2="23"></line>
                 </svg>
               </button>
@@ -235,8 +224,8 @@
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "firebase/app";
-    import { 
-      getAuth, 
+    import {
+      getAuth,
       signInWithEmailAndPassword,
       setPersistence,
       browserLocalPersistence,
@@ -260,7 +249,7 @@
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
-    
+
     // Initialize Analytics if supported in environment
     try {
       getAnalytics(app);
@@ -409,7 +398,7 @@
         } catch (error) {
           console.error('Firebase sign-in error:', error);
           submitBtn.classList.remove('is-loading');
-          
+
           // Show error message
           showAlert(getFriendlyErrorMessage(error), false);
         }
